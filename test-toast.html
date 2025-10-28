@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Toast - Zetterx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+        .test-btn {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .test-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de Toast Notification</h1>
+    <button class="test-btn" onclick="showToast('success', '¡Formulario enviado exitosamente!', 'Gracias por tu interés. Nuestro equipo te contactará dentro de las siguientes 24 horas.')">
+        Probar Toast Success
+    </button>
+    <button class="test-btn" onclick="showToast('error', 'Error', 'Hubo un problema al enviar el formulario.')">
+        Probar Toast Error
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
